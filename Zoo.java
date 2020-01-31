@@ -21,6 +21,9 @@ public class Zoo
         animals.add( new WaterBuffalo("Water Buffalo"));
         animals.add( new FlyFish("Fly Fish"));
         animals.add( new Eagle("Eagle"));
+        animals.add( new Dragon("Dragon"));
+        animals.add( new Phoenix("Phoenix"));
+        
         
         
         for (Animal a : animals)
@@ -43,7 +46,14 @@ public class Zoo
             if (a instanceof Swimmable) {
                 System.out.println(" This animal can swim: " + ((Swimmable) a). swim());
             }
-        
+            
+            if(a instanceof Armorable) {
+                System.out.println(" This animal can equip armor: " + ((Armorable) a). armor());
+            }
+            
+            if(a instanceof Upgradeable) {
+                System.out.println(" This animal can upgrade: " + ((Upgradeable) a). upgrade());
+            }
     }
 }
 }

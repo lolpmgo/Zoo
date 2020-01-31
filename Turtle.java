@@ -21,7 +21,7 @@ public class Turtle extends Animal implements Runnable, Swimmable {
 
     public String swim()
     {
-        return "Turtle swimmmmmmmmmmms";
+        return "Turtle dives";
     }
 
 
